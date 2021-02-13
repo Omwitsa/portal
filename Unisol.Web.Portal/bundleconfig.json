@@ -1,0 +1,26 @@
+[
+  {
+    "outputFileName": "wwwroot/assets/css/bundle.css",
+    "inputFiles": [
+      "wwwroot/assets/css/bootstrap.min.css",
+      "wwwroot/assets/css/waves.min.css",
+      "wwwroot/assets/css/style.css",
+      "wwwroot/assets/css/widget.css",
+      "wwwroot/assets/css/custom.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/assets/js/bundle.js",
+    "inputFiles": [
+      "wwwroot/assets/js/jquery.min.js",
+      "wwwroot/assets/js/jquery-ui.min.js",
+      "wwwroot/assets/js/popper.min.js",
+      "wwwroot/assets/js/bootstrap.min.js",
+      "wwwroot/assets/js/waves.min.js",
+      "wwwroot/assets/js/jquery.slimscroll.js",
+      "wwwroot/assets/js/pcoded.min.js",
+      "wwwroot/assets/js/vertical-layout.min.js",
+      "wwwroot/assets/js/script.min.js"
+    ]
+  }
+]

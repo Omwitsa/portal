@@ -1,0 +1,124 @@
+table.table-sm td, .table.table-sm {
+    padding-top: 0.3rem !important;
+    padding-right: 1rem !important;
+    padding-bottom: 0.3rem !important;
+    padding-left: 1rem !important;
+}
+
+.rightArea {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.leftArea {
+    display: block;
+    max-width: 100%;
+    color: white;
+    height: 100%;
+    background-color: blue !important;
+}
+
+    .leftArea img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .leftArea button {
+        color: white !important;
+        background-color: red !important;
+        margin-bottom: 5%;
+    }
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+
+.switch {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 34px;
+    margin: auto !important;
+}
+
+    .switch input {
+        display: none;
+    }
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+.nav-link {
+    cursor: pointer;
+}
+
+th {
+    padding: 4.8px 16px !important;
+}
+
+.mainContentArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 95vh;
+}
+
+

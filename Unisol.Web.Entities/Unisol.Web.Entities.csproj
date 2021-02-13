@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200127192154_AddFleetTrips.cs" />
+    <Compile Remove="Migrations\20200127192154_AddFleetTrips.Designer.cs" />
+    <Compile Remove="Migrations\20201016133458_hostelBookingStartDate.cs" />
+    <Compile Remove="Migrations\20201016133458_hostelBookingStartDate.Designer.cs" />
+    <Compile Remove="Migrations\20201103064019_ModifySurveyModel.cs" />
+    <Compile Remove="Migrations\20201103064019_ModifySurveyModel.Designer.cs" />
+    <Compile Remove="Migrations\20201103070424_ModifySurveyModel.cs" />
+    <Compile Remove="Migrations\20201103070424_ModifySurveyModel.Designer.cs" />
+    <Compile Remove="Migrations\20201103073215_ModifySurveyModel.cs" />
+    <Compile Remove="Migrations\20201103073215_ModifySurveyModel.Designer.cs" />
+    <Compile Remove="Migrations\20201103073416_ModifySurveyModel.cs" />
+    <Compile Remove="Migrations\20201103073416_ModifySurveyModel.Designer.cs" />
+    <Compile Remove="Migrations\20201103083113_AddSurveyStatus.cs" />
+    <Compile Remove="Migrations\20201103083113_AddSurveyStatus.Designer.cs" />
+    <Compile Remove="Migrations\20201103085940_ModifySurveyResponse.cs" />
+    <Compile Remove="Migrations\20201103085940_ModifySurveyResponse.Designer.cs" />
+    <Compile Remove="Migrations\20201103090352_ClearaneSurveyModification.cs" />
+    <Compile Remove="Migrations\20201103090352_ClearaneSurveyModification.Designer.cs" />
+    <Compile Remove="Migrations\20201103090659_ClearaneSurveyModification.cs" />
+    <Compile Remove="Migrations\20201103090659_ClearaneSurveyModification.Designer.cs" />
+    <Compile Remove="Migrations\20201103090925_ClearaneSurveyModification.cs" />
+    <Compile Remove="Migrations\20201103090925_ClearaneSurveyModification.Designer.cs" />
+    <Compile Remove="Migrations\20201103091349_ClearaneSurveyModification.cs" />
+    <Compile Remove="Migrations\20201103091349_ClearaneSurveyModification.Designer.cs" />
+    <Compile Remove="Migrations\20201103100313_ClearanceStatus.cs" />
+    <Compile Remove="Migrations\20201103100313_ClearanceStatus.Designer.cs" />
+    <Compile Remove="Migrations\20201105102550_AddStatusFlagToSurvey.cs" />
+    <Compile Remove="Migrations\20201105102550_AddStatusFlagToSurvey.Designer.cs" />
+    <Compile Remove="Migrations\20201127145923_AddProjectModel.cs" />
+    <Compile Remove="Migrations\20201127145923_AddProjectModel.Designer.cs" />
+    <Compile Remove="Migrations\20201129105955_ModifyProjectScheduleModel.cs" />
+    <Compile Remove="Migrations\20201129105955_ModifyProjectScheduleModel.Designer.cs" />
+    <Compile Remove="Migrations\20201129112059_ProjectModel.cs" />
+    <Compile Remove="Migrations\20201129112059_ProjectModel.Designer.cs" />
+    <Compile Remove="Migrations\20210211122835_MakeLeaveRelieverMandatory.cs" />
+    <Compile Remove="Migrations\20210211122835_MakeLeaveRelieverMandatory.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JSON" Version="1.0.1" />
+    <PackageReference Include="MailKit" Version="2.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+
+</Project>

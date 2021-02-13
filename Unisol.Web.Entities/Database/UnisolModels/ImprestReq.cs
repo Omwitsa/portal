@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace Unisol.Web.Entities.Database.UnisolModels
+{
+    public partial class ImprestReq
+    {
+        public int Id { get; set; }
+        public string EmpNo { get; set; }
+        public string Description { get; set; }
+        public string Itinerary { get; set; }
+        public string ImpDays { get; set; }
+        public string Usercode { get; set; }
+        public decimal? Amount { get; set; }
+        public DateTime? Edate { get; set; }
+        public DateTime? Sdate { get; set; }
+        public DateTime? Rdate { get; set; }
+        public DateTime? Rtime { get; set; }
+        public string Reaction { get; set; }
+        public string Reactby { get; set; }
+        public DateTime? ReactDate { get; set; }
+        public DateTime? ReactTime { get; set; }
+		public string MemoRef { get; set; }
+	}
+}

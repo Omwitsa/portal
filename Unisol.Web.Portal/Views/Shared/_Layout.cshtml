@@ -1,0 +1,85 @@
+﻿@model Unisol.Web.Common.ViewModels.Settings.PortalSetting
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@Model.Name</title>
+    <link rel="icon" id="portalLogo" href="" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="~/dist/site.css" asp-append-version="true" />
+    </environment>
+    <style>
+            @Html.Raw(@ViewBag.CustomStyles)
+    </style>
+    <link rel="stylesheet" type="text/css" href="~/assets/files/bower_components/bootstrap/css/bootstrap.min.css">
+    <!-- waves.css -->
+    <link rel="stylesheet" href="~/assets/files/assets/pages/waves/css/waves.min.css" type="text/css" media="all">
+    <!-- feather icon -->
+    <link rel="stylesheet" type="text/css" href="~/assets/files/assets/icon/feather/css/feather.css">
+    <!-- Style.css -->
+    <!-- <link rel="stylesheet" type="text/css" href="~/assets/files/assets/css/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="~/assets/files/assets/css/widget.css">
+    <link rel="stylesheet" href="~/assets/css/custom.css">
+</head>
+
+<body>
+    @*<input type="hidden" id="settings" value="@ViewBag.Settings" />*@
+    @RenderBody()
+    <script src="~/dist/vendor.js" asp-append-version="true"></script>
+    <script src="~/assets/js/bundle.js"></script>
+
+    @RenderSection("scripts", required: false)
+    @* <script src="~/lib/signalr/dist/browser/signalr.js"></script> *@
+    @* <script src="signalr/hubs"></script> *@
+
+    <script>
+        $(document).ready(function () {
+            var initCountdownValue = 1800;
+            var intervalid = window.setInterval(function Redirect() {
+                initCountdownValue--;
+                if (initCountdownValue < 1) {
+                    clearInterval(intervalid);
+                    window.location.href = "/login";
+                }
+            }, 1 * 1000);
+        });
+    </script>
+</body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/printThis/1.14.0/printThis.min.js"></script>
+<!-- Required Jquery -->
+@* <script type="text/javascript" src="~/assets/files/bower_components/jquery/js/jquery.min.js"></script> *@
+<script type="text/javascript" src="~/assets/files/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="~/assets/files/bower_components/popper.js/js/popper.min.js"></script>
+<script type="text/javascript" src="~/assets/files/bower_components/bootstrap/js/bootstrap.min.js"></script>
+<!-- waves js -->
+<script src="~/assets/files/assets/pages/waves/js/waves.min.js"></script>
+<!-- jquery slimscroll js -->
+<script type="text/javascript" src="~/assets/files/bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
+
+
+<!-- modernizr js -->
+<script type="text/javascript" src="~/assets/files/bower_components/modernizr/js/modernizr.js"></script>
+<script type="text/javascript" src="~/assets/files/bower_components/modernizr/js/css-scrollbars.js"></script>
+<!-- Float Chart js -->
+<script src="~/assets/files/assets/pages/chart/float/jquery.flot.js"></script>
+<script src="~/assets/files/assets/pages/chart/float/jquery.flot.categories.js"></script>
+<script src="~/assets/files/assets/pages/chart/float/curvedLines.js"></script>
+<script src="~/assets/files/assets/pages/chart/float/jquery.flot.tooltip.min.js"></script>
+<!-- amchart js -->
+<script src="~/assets/files/assets/pages/widget/amchart/amcharts.js"></script>
+<script src="~/assets/files/assets/pages/widget/amchart/serial.js"></script>
+<script src="~/assets/files/assets/pages/widget/amchart/light.js"></script>
+<!-- Custom js -->
+<script src="~/assets/files/assets/js/pcoded.min.js"></script>
+@* <script src="~/assets/files/assets/js/vertical/vertical-layout.min.js"></script> *@
+<script type="text/javascript" src="~/assets/files/assets/pages/dashboard/custom-dashboard.min.js"></script>
+@*<script type="text/javascript" src="~/assets/files/assets/js/script.min.js"></script>*@
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-90716026-1"></script>
+

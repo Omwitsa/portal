@@ -1,0 +1,101 @@
+.main-menu .main-menu-header img {
+    width: 180px;
+}
+.nav-link { cursor: pointer;}
+.wizard {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.roleBtn{color:#fff}
+/* Accessibility */
+.wizard > .steps .current-info,
+.tabcontrol > .steps .current-info {
+  position: absolute;
+  left: -999em;
+}
+
+.wizard > .content > .title,
+.tabcontrol > .content > .title {
+  position: absolute;
+  left: -999em;
+}
+
+.wizard > .steps .number {
+  font-size: 1.429em;
+}
+
+.wizard > .steps > ul > li {
+  width: 50%;
+}
+
+.wizard > .steps > ul > li,
+.wizard > .actions > ul > li {
+  float: left;
+}
+
+.wizard > .steps a,
+.wizard > .steps a:hover,
+.wizard > .steps a:active {
+  display: block;
+  width: auto;
+  margin: 0 0.5em 0.5em;
+  padding: 1em 1em;
+  text-decoration: none;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.wizard > .steps .current a,
+.wizard > .steps .current a:hover,
+.wizard > .steps .current a:active {
+  color: #fff;
+  cursor: default;
+}
+
+.wizard > .steps .done a,
+.wizard > .steps .done a:hover,
+.wizard > .steps .done a:active {
+  background: #9dc8e2;
+  color: #fff;
+}
+
+.wizard > .content {
+  background: #fff;
+  display: block;
+  margin: 0.5em;
+  min-height: 20em;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.wizard > .content > .body {
+  float: left;
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  padding: 2.5%;
+}
+
+.wizard > .actions {
+  position: relative;
+  display: block;
+  text-align: right;
+  width: 100%;
+}
+
+.wizard > .actions > ul {
+  display: inline-block;
+  text-align: right;
+}
+
+.wizard > .actions > ul > li {
+  margin: 0 0.5em;
+}
